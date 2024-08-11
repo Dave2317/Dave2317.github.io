@@ -1,0 +1,158 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1.5rem 0; /* Increased padding */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img.nav-img {
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+header .logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem; /* Increased font size */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 2.5rem; /* Increased margin */
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.25rem; /* Increased font size */
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Home Section */
+#home {
+    background: url('images/background.jpg') no-repeat center center/cover;
+    color: #151515;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+#home h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+#home img {
+    width: 200px; /* Adjust as needed */
+    height: auto;
+    border-radius: 50%; /* Creates a circular effect if your image is square */
+    margin-bottom: 2rem;
+}
+
+#home .greeting {
+    font-size: 2rem; /* Increased font size */
+    margin-bottom: 1rem;
+}
+
+#home .intro {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#home p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0; /* Increased padding */
+    position: relative;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .social-links {
+    margin-top: 1rem;
+}
+
+footer .social-links a {
+    margin: 0 0.5rem;
+    color: #fff;
+    font-size: 2rem; /* Font size for icons */
+    transition: transform 0.3s ease;
+}
+
+footer .social-links a:hover {
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+    }
+}
