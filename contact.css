@@ -4,7 +4,7 @@ body, html {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
-    min-height: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -15,6 +15,7 @@ body, html {
 }
 
 header {
+    height: 50px;
     background: #333;
     color: #fff;
     padding: 1.5rem 0; /* Increased padding */
@@ -133,6 +134,7 @@ footer {
     padding: 1.5rem 0; /* Increased padding */
     position: relative;
     margin-top: auto; /* Pushes footer to the bottom */
+    height: 50px;
 }
 
 footer .container {
