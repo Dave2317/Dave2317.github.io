@@ -17,13 +17,15 @@ body, html {
 header {
     background: #333;
     color: #fff;
-    padding: 1.5rem 0; /* Increased padding */
+    padding: 1.5rem 0; /* Changed padding to match project.css */
 }
 
 header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 header .logo {
@@ -32,8 +34,8 @@ header .logo {
 }
 
 header .logo img.nav-img {
-    width: 40px; /* Adjust size as needed */
-    height: 40px; /* Adjust size as needed */
+    width: 50px; /* Changed width to match project.css */
+    height: 50px; /* Changed height to match project.css */
     border-radius: 50%;
     margin-right: 10px;
 }
@@ -41,7 +43,7 @@ header .logo img.nav-img {
 header .logo a {
     color: #fff;
     text-decoration: none;
-    font-size: 2rem; /* Increased font size */
+    font-size: 2rem; /* Font size already matches project.css */
 }
 
 .nav-links {
@@ -53,13 +55,13 @@ header .logo a {
 }
 
 .nav-links li {
-    margin-left: 2.5rem; /* Increased margin */
+    margin-left: 2.5rem; /* Margin already matches project.css */
 }
 
 .nav-links a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.25rem; /* Increased font size */
+    font-size: 1.25rem; /* Font size already matches project.css */
 }
 
 .burger {
@@ -92,6 +94,7 @@ header .logo a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 1rem; /* Removed extra space */
 }
 
 .skill-card {
@@ -101,16 +104,17 @@ header .logo a {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     margin: 1rem;
     padding: 2rem; /* Increased padding */
-    width: 320px; /* Adjusted width */
+    width: 280px; /* Adjusted width */
+    box-sizing: border-box;
 }
 
 .skill-card h3 {
-    font-size: 2rem; /* Increased font size */
+    font-size: 1.75rem; /* Increased font size */
     margin-bottom: 1rem;
 }
 
 .skill-card p {
-    font-size: 1.25rem; /* Increased font size */
+    font-size: 1rem; /* Increased font size */
     line-height: 1.6;
 }
 
@@ -161,7 +165,7 @@ footer .social-links a:hover {
     }
 
     .skills-container {
-        flex-direction: column;
-        align-items: center;
+        width: 100%;
+        max-width: 600px;
     }
 }
